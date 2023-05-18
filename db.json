@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employee": [
+    {
+      "firstName": "Shivam",
+      "lastName": "Singh",
+      "email": "shivam123@gmail.com",
+      "phoneNumber": "4587963214",
+      "gender": "male",
+      "degree": "BCA",
+      "specilization": "",
+      "experience": "1",
+      "package": "3",
+      "id": 1
+    }
+  ]
+}
