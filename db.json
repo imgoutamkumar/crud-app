@@ -28,6 +28,78 @@
       "experience": "1",
       "package": "3",
       "id": 1
+    },
+    {
+      "firstName": "Goutam",
+      "lastName": "Kumar",
+      "email": "goutam123@gmail.com",
+      "phoneNumber": "7251489632",
+      "gender": "male",
+      "degree": "B.Tech",
+      "specilization": "",
+      "experience": "0",
+      "package": "3",
+      "id": 2
+    },
+    {
+      "firstName": "Mohan",
+      "lastName": "Kumar",
+      "email": "mohan123@gmail.com",
+      "phoneNumber": "4578963214",
+      "gender": "male",
+      "degree": "B.Tech",
+      "specilization": "",
+      "experience": "1",
+      "package": "5",
+      "id": 3
+    },
+    {
+      "firstName": "Sneha",
+      "lastName": "Sharma",
+      "email": "sneha123@gmail.com",
+      "phoneNumber": "4578963251",
+      "gender": "female",
+      "degree": "B.Tech",
+      "specilization": "",
+      "experience": "0",
+      "package": "4",
+      "id": 4
+    },
+    {
+      "firstName": "Priyanka",
+      "lastName": "Malik",
+      "email": "priyanka@gmail.com",
+      "phoneNumber": "4512369547",
+      "gender": "female",
+      "degree": "Diploma",
+      "specilization": "CSE",
+      "experience": "2",
+      "package": "5",
+      "id": 5
+    },
+    {
+      "firstName": "Rahul",
+      "lastName": "Roy",
+      "email": "rahul@gmail.com",
+      "phoneNumber": "1421357896",
+      "gender": "male",
+      "degree": "M.Tech",
+      "specilization": "ME",
+      "experience": "1",
+      "package": "7",
+      "id": 6
+    },
+    {
+      "firstName": "Vishal",
+      "lastName": "Kumar",
+      "email": "vishal@gmail.com",
+      "phoneNumber": "4512589632",
+      "gender": "male",
+      "degree": "BCA",
+      "specilization": "IT",
+      "experience": "3",
+      "package": "9",
+      "id": 7
     }
   ]
 }

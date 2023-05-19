@@ -1,4 +1,3 @@
-import { ObserversModule } from '@angular/cdk/observers';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -14,5 +13,9 @@ export class EmployeeService {
 
   getEmployeeList(): Observable<any> {
     return this._http.get('http://localhost:3000/employee');
+  }
+
+  deleteEmployee(id: number): Observable<any> {
+    return this._http.delete('http://localhost:3000/employee/${id}');
   }
 }
