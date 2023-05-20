@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  deleteEmployee(id: number) {
+  deleteEmployeebyId(id: number) {
     this._empservice.deleteEmployee(id).subscribe({
       next: (res) => {
         this._coreService.openSnackBar('Employee deleted', 'Done');
