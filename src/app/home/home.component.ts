@@ -6,6 +6,7 @@ import { EmployeeService } from '../services/employee.service';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { CoreService } from '../core/core.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -32,7 +33,8 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private _dialog: MatDialog,
-    private _empservice: EmployeeService
+    private _empservice: EmployeeService,
+    private _coreService: CoreService
   ) {}
 
   ngOnInit(): void {
@@ -66,7 +68,7 @@ export class HomeComponent implements OnInit {
   deleteEmployee(id: number) {
     this._empservice.deleteEmployee(id).subscribe({
       next: (res) => {
-        alert('Employee Deleted Successfully');
+        this._coreService.openSnackBar('Employee deleted', 'Done');
         this.getEmployeeList();
       },
       error: (err) => {
@@ -82,5 +84,18 @@ export class HomeComponent implements OnInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  OpenEditForm(data: any) {
+    const dialogRef = this._dialog.open(EmpAddEditComponent, {
+      data: data,
+    });
+    dialogRef.afterClosed().subscribe({
+      next: (val) => {
+        if (val) {
+          this.getEmployeeList();
+        }
+      },
+    });
   }
 }
