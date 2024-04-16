@@ -7,6 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class EmployeeService {
   constructor(private _http: HttpClient) {}
+
+  /* use command to start this free json server
+  (json-server --watch db.json)
+   */
   addEmployee(data: any): Observable<any> {
     return this._http.post('http://localhost:3000/employee', data);
   }
